@@ -1,4 +1,4 @@
-FROM liskl/base
+FROM liskl/base:master
 
 # Here we install GNU libc (aka glibc) and set C.UTF-8 locale as default.
 RUN ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases/download" && \
