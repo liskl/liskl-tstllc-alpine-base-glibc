@@ -1,0 +1,20 @@
+pipeline:
+  docker:
+    image: plugins/docker
+    repo: registry.liskl.com/tstllc-alpine-base-glibc
+    tag:
+      - ${DRONE_BRANCH}-latest
+      - ${DRONE_BRANCH}.build-${DRONE_BUILD_NUMBER}
+    when:
+      branch:
+        exclude: [ release/* ]
+    force_tag: true
+
+publish:
+  docker:
+    repo: registry.liskl.com/tstllc-alpine-base-glibc
+    tag:
+      - latest
+    when:
+      branch:
+        include: [ master, release/* ]
