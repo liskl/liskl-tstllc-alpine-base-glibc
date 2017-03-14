@@ -1,7 +1,11 @@
 pipeline:
   docker:
     image: plugins/docker
-    repo: registry.liskl.com/tstllc/alpine-base-glibc
+    repo: registry.tstllc.net/llisk/alpine-base-glibc
+    username: ${REPO_USERNAME}
+    password: ${REPO_PASSWORD}
+    email: ${REPO_EMAILADDR}
+    registry: registry.tstllc.net
     force_tag: true
 
 publish:
