@@ -4,4 +4,3 @@
 
 Used for the base for any images moving forwards from the Dev-Ops team, that require glibc functionality, like java or scala.
 
-More to Come
