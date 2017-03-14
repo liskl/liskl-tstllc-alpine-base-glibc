@@ -10,7 +10,7 @@ pipeline:
 
 publish:
   docker:
-    repo: registry.liskl.com/tstllc/alpine-base-glibc
+    repo: registry.tstllc.net/llisk/alpine-base-glibc
     tag:
       - latest
     when:
@@ -19,7 +19,7 @@ publish:
 
 publish:
   docker:
-    repo: registry.liskl.com/tstllc/alpine-base-glibc
+    repo: registry.tstllc.net/llisk/alpine-base-glibc
     tag:
       - ${DRONE_BRANCH}-latest
       - ${DRONE_BRANCH}.build-${DRONE_BUILD_NUMBER}
